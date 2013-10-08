@@ -1,6 +1,9 @@
 MyApp::Application.routes.draw do
 
- 
+  resources :profils
+
+
+
   get "welcome/index"
   get "welcome/help"
   # The priority is based upon order of creation: first created -> highest priority.
