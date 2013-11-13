@@ -14,25 +14,7 @@ def index
 
 @profils=Profil.new
 
-#@profils2=Profil.all
-
-
-#@profils2=Profil.find(:all,
-                     # :conditions => "nom= '3'",
-                      #:order      =>  "id DESC")
-
-a=4
-
-
-@profils2=Profil.find(:all,
-                     :conditions => "",
-                      :order      =>  "id DESC",
-                      :limit      =>  10,
-                       :offset      =>  a*10)     # numero de page qu on souhaite afficher
- 
-
-
-
+@profils2=Profil.all
 
 
 end

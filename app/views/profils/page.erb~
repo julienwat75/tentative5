@@ -1,9 +1,5 @@
 <h3>Post a Comment</h3>
 
-
-
-
-
 <%= form_for @profils, :url => { :action => "search" } do |t| %>
 
  <p>votre nom <%= t.text_field :nom, :size => 30 %> </p>
@@ -14,16 +10,20 @@
 
 <% end  %>
 
-
-<h3> listes </h3>
-
-
-<p> <% @profils2.each do |t|  %></p>
+<h3>  Ma recherche: </h3>
 
 
-<%=  t.nom  %>
+
+<% @profils3.each do |t| %>
+
+<p><%= t.nom  %></p>
+
+<p><%= t.id  %></p>
 
 
 <% end %>
+
+
+<p><%= @farming2  %></p>
 
 

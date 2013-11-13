@@ -43,6 +43,11 @@ def show
 end
 
 
+def change
+
+end
+
+
 def search
 
 @profils=Profil.new

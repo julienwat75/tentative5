@@ -2,7 +2,10 @@ MyApp::Application.routes.draw do
 
   resources :profils
   resources :offres
+  get "profils/search"
+  post "profils/search"
 
+  
 
   get "welcome/index"
   get "welcome/help"
